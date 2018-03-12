@@ -48,7 +48,7 @@ int main() {
     return 0;
 }
 
-void framebuffer_resized(GLFWwindow *window, int width, int height) {
+void framebuffer_resized(GLFWwindow *, int width, int height) {
     glViewport(0, 0, width, height);
     renderer->SetScreenSize(width, height);
 }
