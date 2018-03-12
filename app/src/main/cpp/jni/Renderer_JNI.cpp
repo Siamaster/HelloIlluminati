@@ -15,7 +15,7 @@ JNI_FUNCTION(void, destroy)(JNIEnv *env, jobject obj) {
     delete THIS;
 }
 
-JNI_FUNCTION(jlong, create)(JNIEnv *env, jobject) {
+JNI_FUNCTION(jlong, create)(JNIEnv *, jobject) {
     return jlong(new Renderer);
 }
 
